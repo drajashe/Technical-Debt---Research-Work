@@ -36,5 +36,6 @@ Do system development and management decisions including number of commits, rele
 
 ## Technical Debt Calculation
  Sonarqube is used for analysing a partivular project to be tested for Technical Debt.
- ![soarqubeAnalysis](./Screen Shot 2019-04-28 at 10.34.51.png)
+ ![](soarqubeAnalysis)
+soarqubeAnalysis: ./Screen Shot 2019-04-28 at 10.34.51.png)
  
