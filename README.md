@@ -36,7 +36,7 @@ Do system development and management decisions including number of commits, rele
 
 ## Technical Debt Calculation
  Sonarqube is used for analysing a partivular project to be tested for Technical Debt.
-![SonarqubeAnalysis](./imgs/Sonar.png)
+![SonarqubeAnalysis](./imgs/sonar.png)
  - Technical Debt= Technical Debt(in _man _ hours)
  - Technical Debt Density= Technical Debt(in _man _hours)/LOC
  
