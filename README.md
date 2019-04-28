@@ -36,7 +36,7 @@ Do system development and management decisions including number of commits, rele
 
 ## Technical Debt Calculation
  Sonarqube is used for analysing a partivular project to be tested for Technical Debt.
-![SonarqubeAnalysis](https://github.com/drajashe/Technical-Debt---Research-Work/blob/master/SonarqubeAnalysis.png)
+![SonarqubeAnalysis](https://github.com/drajashe/Technical-Debt---Research-Work/blob/master/imgs/SonarqubeAnalysis.png)
  - Technical Debt= Technical Debt(in _man _ hours)
  - Technical Debt Density= Technical Debt(in _man _hours)/LOC
  
@@ -48,4 +48,12 @@ Do system development and management decisions including number of commits, rele
 - Well-presented in the community.
 - Active Git repository
 
-![Data Collection using Apache](https://github.com/drajashe/Technical-Debt---Research-Work/blob/master/DataCollection.png)
+![Data Collection using Apache](https://github.com/drajashe/Technical-Debt---Research-Work/blob/master/imgs/DataCollection.png)
+
+## Data Analysis - 
+- Evaluation on system development and management decisions hypothesis (RQ#3)
+- Pearson Correlation Test
+- Significance level is set to 0.05 Confidence level=95%
+
+## Results of Pearson Correlation
+![PearsonResults](https://github.com/drajashe/Technical-Debt---Research-Work/blob/master/imgs/Pearsonresult.png)
