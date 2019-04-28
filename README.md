@@ -56,4 +56,4 @@ Do system development and management decisions including number of commits, rele
 - Significance level is set to 0.05 Confidence level=95%
 
 ## Results of Pearson Correlation
-![PearsonResults](./imgs/Pearsonresult.png)
+![PearsonResults](./imgs/PearsonResult.png)
