@@ -32,7 +32,7 @@ relate to the total technical debt and the technical debt density.
 ### Research Question #2: 
 Do the total technical debt and the technical debt density in a software vary among domains?
 ### Research Question #3: 
-Do system development and management decisions including number of commits, releases, branches, and contributors relate to the total technical debt and the technical debt density?
+Do system development and management decisions including number of commits, releases, branches, and contributors relate to the total technical debt and the technical debt density? 
 
 ## Technical Debt Calculation
  Sonarqube is used for analysing a partivular project to be tested for Technical Debt.
