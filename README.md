@@ -65,7 +65,14 @@ Tool for COunting the number of classes in a java project
 http://www.campwoodsw.com/sourcemonitor.html
 https://www.ndepend.com/
 
+### Difference between ANT and Maven
+- Both Ant and Maven are build tools.
+Maven came after ANT and offers much more than a build tool. Main difference between ANT and Maven is that In ANT you need to define every thing i.e. source directory, build directory, target directory etc while Maven adopts principle of Convention over configuration. Which means Maven has predefined project structure i.e. standard directory for source files, test files and resources
+- Ever since Maven has released, many Java programmer compare Maven and ANT, which is pretty natural. Even I have taken some time to adopt Maven because I was very used to ANT build process. Eventually I realized Maven offers more convenience as build tool than ANT and also enforces a common way to build Java applications among multiple projects, developers and organization. Before shifting to Maven, I had worked with very complex ANT scripts, in-fact every project I work has different build structure than other. In order to make a release, you need to spend considerable time to understand whole build process e.g. from where does libraries are coming, are they coming as JAR or project is building them during build time etc. Maven solves many of these problem by introducing standard convention and better dependency management.
 
+Read more: https://javarevisited.blogspot.com/2015/01/difference-between-maven-ant-jenkins-and-hudson.html#ixzz5xG1PB8SH
+
+Read more: https://javarevisited.blogspot.com/2015/01/difference-between-maven-ant-jenkins-and-hudson.html#ixzz5xG0q3l5j
 Tutorial for installing and running ANT 
 
 Refer: https://www.mkyong.com/ant/how-to-apache-ant-on-mac-os-x/
