@@ -42,3 +42,90 @@ Now you should be able to run the ant -v  command anywhere
 
 
 6. https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Ant
+
+
+
+
+
+
+
+
+Analyzing with SonarQube Scanner for Ant
+
+Instruction to analyze projects using SonarQube 
+
+Install latest version of ANT.
+Tutorial for installing and running ANT 
+i.) Get ANT from Apache Ant website and get the tar.gz file.
+    Refer: https://www.mkyong.com/ant/how-to-apache-ant-on-mac-os-x/
+ii.) Extract it using tar vxf apache-ant-1.9.4-bin.tar.gz
+
+
+a.Navigate to bin folder under Apache Ant folder and 
+b. Run  ant -v
+Something like this would be printed if you have correctly install ANT
+Apache Ant(TM) version 1.9.4 compiled on April 29 2014
+Trying the default build file: build.xml
+Buildfile: build.xml does not exist!
+Build failed
+
+
+
+
+
+
+
+2. Setup the environmental variables for ANT
+vim ~/.bash_profile
+export JAVA_HOME=$(/usr/libexec/java_home)
+export GRADLE_HOME=/Users/macbook/gradle
+export M2_HOME=/Users/macbook/apache-maven-3.5.4
+# Apache Ant
+export ANT_HOME=/Users/macbook/apache-ant-1.9.4
+# Export to PATH
+export PATH=$PATH:$GRADLE_HOME/bin:$M2_HOME/bin:$ANT_HOME/bin
+Now you should be able to run the ant -v  command anywhere
+
+3. In order to use ant with sonarqube try running 
+Follow instructions on this page :
+https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Ant
+
+i.) Define a new sonar Ant target in your Ant build script:
+      xmlns:sonar="antlib:org.sonar.ant"
+   Add this in the build file.
+
+ii.)Define the SonarQube global properties (the most usual way is to pass these properties via the command line)
+
+Add this next:
+<property name="sonar.host.url" value="http://localhost:9000" />
+
+
+
+iii.)Define the SonarQube project properties - 
+Change the values with respective project name you are trying to build for name=”sonar.projectKey”
+And name=”sonar.projectName”
+
+
+Check if there is src, common and lib folder with jar files as per the error which would pop up on executing “ant sonar”
+
+iv.)Define SonarQube Scanner for Ant Target
+
+Add this to build file and in this for the highlighted line download the sonar jar file from link below and give the respective path below.
+
+<target name="sonar">
+    <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+        <!-- Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
+        <classpath path="path/to/sonar/ant/task/lib/sonarqube-ant-task-2.5" />
+    </taskdef>
+
+
+
+
+Can have it in your project folder like shown above.
+
+
+
+v.)Run the following command from the project base directory to launch the analysis:
+
+Ant sonar
+
