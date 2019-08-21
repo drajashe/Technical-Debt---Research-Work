@@ -1,6 +1,6 @@
 # Technical-Debt---Research-Work
 
-## Empirical Study of Technical debt in Open source software systems.
+## Empirical Study of Technical debt in Open Source Software Systems.
 
 ## What is Technical Debt?
 - In 1992, Ward Cunningham described technical debt as
