@@ -6,7 +6,7 @@
 - In 1992, Ward Cunningham described technical debt as
 writing immature or “not quite right” code in order to ship a
 new product to market faster.
--Technical Debt consists of:
+- Technical Debt consists of:
   • Principle: measures the cost or effort for eliminating technical
   debt .
   • Interest: measures the extra cost or effort over some period of
