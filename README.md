@@ -77,33 +77,31 @@ Tutorial for installing and running ANT
 
 Refer: https://www.mkyong.com/ant/how-to-apache-ant-on-mac-os-x/
 
-Get ANT from Apache Ant website and get the tar.gz file.
-Extract it using tar vxf apache-ant-1.9.4-bin.tar.gz
-
-
-Navigate to bin folder under Apache Ant folder and 
+1. Get ANT from Apache Ant website and get the tar.gz file.
+2. Extract it using tar vxf apache-ant-1.9.4-bin.tar.gz
+3. Navigate to bin folder under Apache Ant folder and 
 ant -v
-Apache Ant(TM) version 1.9.4 compiled on April 29 2014
-Trying the default build file: build.xml
-Buildfile: build.xml does not exist!
-Build failed
+4. Apache Ant(TM) version 1.9.4 compiled on April 29 2014
+   Trying the default build file: build.xml
+   Buildfile: build.xml does not exist!
+   Build failed
 
 
-Something like this would be printed if you have correctly install ANT
-4. Setup the environmental variables for ANT
+4. Something like this would be printed if you have correctly install ANT
+6. Setup the environmental variables for ANT
 vim ~/.bash_profile
 export JAVA_HOME=$(/usr/libexec/java_home)
 export GRADLE_HOME=/Users/mkyong/gradle
 export M2_HOME=/Users/mkyong/apache-maven-3.1.1
 
-# Apache Ant
+#### Apache Ant
 export ANT_HOME=/Users/mkyong/apache-ant-1.9.4
 
-# Export to PATH
+#### Export to PATH
 export PATH=$PATH:$GRADLE_HOME/bin:$M2_HOME/bin:$ANT_HOME/bin
 Now you should be able to run the ant -v  command anywhere
-5. In order to use ant with sonarqube try running 
+7. In order to use ant with sonarqube try running 
  Ant sonar if the project has a build.xml
 
 
-6. https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Ant
+8. https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Ant
