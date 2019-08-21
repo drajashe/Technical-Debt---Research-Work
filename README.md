@@ -82,7 +82,6 @@ Buildfile: build.xml does not exist!
 Build failed
 
 
-
 Something like this would be printed if you have correctly install ANT
 4. Setup the environmental variables for ANT
 vim ~/.bash_profile
