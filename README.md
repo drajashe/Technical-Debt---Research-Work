@@ -105,3 +105,8 @@ Now you should be able to run the ant -v  command anywhere
 
 
 8. https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Ant
+
+
+SonarQube is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities on 20+ programming languages. SonarQube offers reports on duplicated code, coding standards, unit tests, code coverage, code complexity, comments, bugs, and security vulnerabilities.
+
+SonarQube can record metrics history and provides evolution graphs. SonarQube provides fully automated analysis and integration with Maven, Ant, Gradle, MSBuild and continuous integration tools (Atlassian Bamboo, Jenkins, Hudson, etc.).[4][5][6]
